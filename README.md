@@ -52,7 +52,19 @@ Aplikasi dibuat menggunakan Java Swing dengan komponen:
 
 ## Hasil Program
 Aplikasi akan menampilkan total pembayaran sesuai dengan metode pembayaran yang dipilih.
+## Tampilan dan Hasil Pengujian
 
+### 1. Pembayaran Tunai
+
+Pembayaran tunai tidak dikenakan biaya administrasi.
+
+![Pembayaran Tunai](screenshots/tunai.png)
+
+### 2. Pembayaran Transfer
+
+Pembayaran transfer dikenakan biaya administrasi sebesar Rp2.500.
+
+![Pembayaran Transfer](screenshots/transfer.png)
 ---
 
 **Dibuat oleh Azalia Sakila**  
