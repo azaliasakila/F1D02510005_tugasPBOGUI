@@ -47,13 +47,13 @@ Terdapat dua metode pembayaran dalam aplikasi:
 
 Pembayaran menggunakan metode tunai tidak dikenakan biaya administrasi. Total pembayaran sama dengan harga barang.
 
-![Pembayaran Tunai](screenshots/tunai.png)
+![Pembayaran Tunai](screenshot/tunai.png)
 
 ### 2. Pembayaran Transfer
 
 Pembayaran menggunakan metode transfer dikenakan biaya administrasi sebesar Rp2.500.
 
-![Pembayaran Transfer](screenshots/transfer.png)
+![Pembayaran Transfer](screenshot/transfer.png)
 
 ## Komponen GUI
 
