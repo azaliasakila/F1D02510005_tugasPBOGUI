@@ -1,9 +1,9 @@
-# Aplikasi Pembayaran Sederhana
+# APLIKASI PEMBAYARAN SEDERHANA
 
 ## Deskripsi
 Aplikasi Pembayaran Sederhana merupakan program berbasis Java yang dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Objek (PBO).
 
-Program ini menggunakan GUI (Graphical User Interface) dengan Java Swing untuk membantu pengguna melakukan simulasi perhitungan pembayaran berdasarkan metode pembayaran yang dipilih.
+Aplikasi ini menggunakan GUI (Graphical User Interface) dengan Java Swing untuk melakukan simulasi pembayaran berdasarkan metode pembayaran yang dipilih, yaitu tunai dan transfer.
 
 ## Identitas Mahasiswa
 - **Nama:** Azalia Sakila
@@ -14,58 +14,75 @@ Program ini menggunakan GUI (Graphical User Interface) dengan Java Swing untuk m
 ## Fitur Aplikasi
 1. Memasukkan nama barang.
 2. Memasukkan harga barang.
-3. Memilih jenis pembayaran (Tunai atau Transfer).
+3. Memilih jenis pembayaran.
 4. Menghitung total pembayaran secara otomatis.
 5. Menampilkan hasil pembayaran.
 
 ## Konsep OOP yang Digunakan
-- **Abstract Class:** `Pembayaran`
-- **Inheritance:** `Tunai` dan `Transfer` mewarisi class `Pembayaran`.
-- **Abstract Method:** `hitungTotal()`.
+
+- **Abstract Class:** `Pembayaran` sebagai kelas induk.
+- **Inheritance:** Class `Tunai` dan `Transfer` mewarisi class `Pembayaran`.
+- **Abstract Method:** `hitungTotal()` sebagai method abstrak yang diimplementasikan oleh class turunannya.
 - **Polymorphism:** Objek `Pembayaran` dapat menggunakan implementasi dari class `Tunai` maupun `Transfer`.
-- **Encapsulation:** Pengelompokan atribut dan method ke dalam class.
 
-## Komponen GUI
-Aplikasi dibuat menggunakan Java Swing dengan komponen:
-- `JFrame`
-- `JLabel`
-- `JTextField`
-- `JComboBox`
-- `JButton`
+## Aturan Perhitungan Pembayaran
 
-## Aturan Perhitungan
-- Pembayaran tunai: harga barang tanpa biaya tambahan.
-- Pembayaran transfer: harga barang ditambah biaya administrasi simulasi sebesar Rp2.500.
+Terdapat dua metode pembayaran dalam aplikasi:
 
-## Teknologi
-- Java
-- Java Swing
-- NetBeans / Visual Studio Code
+1. **Pembayaran Tunai**
+   - Tidak dikenakan biaya administrasi.
+   - Total pembayaran sama dengan harga barang.
 
-## Cara Menjalankan
-1. Pastikan Java JDK sudah terinstal.
-2. Buka project menggunakan NetBeans atau Visual Studio Code.
-3. Jalankan file `AplikasiPembayaran.java`.
-4. Masukkan nama barang dan harga.
-5. Pilih metode pembayaran.
-6. Klik tombol **BAYAR** untuk melihat total pembayaran.
+2. **Pembayaran Transfer**
+   - Dikenakan biaya administrasi sebesar Rp2.500.
+   - Total pembayaran merupakan harga barang ditambah biaya administrasi.
 
-## Hasil Program
-Aplikasi akan menampilkan total pembayaran sesuai dengan metode pembayaran yang dipilih.
+**Rumus:**
+- Tunai = Harga Barang
+- Transfer = Harga Barang + Rp2.500
+
 ## Tampilan dan Hasil Pengujian
 
 ### 1. Pembayaran Tunai
 
-Pembayaran tunai tidak dikenakan biaya administrasi.
+Pembayaran menggunakan metode tunai tidak dikenakan biaya administrasi. Total pembayaran sama dengan harga barang.
 
 ![Pembayaran Tunai](screenshots/tunai.png)
 
 ### 2. Pembayaran Transfer
 
-Pembayaran transfer dikenakan biaya administrasi sebesar Rp2.500.
+Pembayaran menggunakan metode transfer dikenakan biaya administrasi sebesar Rp2.500.
 
 ![Pembayaran Transfer](screenshots/transfer.png)
+
+## Komponen GUI
+
+Aplikasi dibuat menggunakan Java Swing dengan komponen:
+
+1. `JFrame` – sebagai jendela utama aplikasi.
+2. `JLabel` – menampilkan keterangan.
+3. `JTextField` – memasukkan nama dan harga barang.
+4. `JComboBox` – memilih metode pembayaran.
+5. `JButton` – menjalankan proses pembayaran.
+
+## Teknologi yang Digunakan
+- Java
+- Java Swing
+- JDK
+- Visual Studio Code / NetBeans
+
+## Cara Menjalankan Program
+
+1. Pastikan Java JDK sudah terinstal.
+2. Buka project menggunakan Visual Studio Code atau NetBeans.
+3. Jalankan file `AplikasiPembayaran.java`.
+4. Masukkan nama barang.
+5. Masukkan harga barang.
+6. Pilih metode pembayaran (Tunai atau Transfer).
+7. Klik tombol **BAYAR**.
+8. Hasil total pembayaran akan ditampilkan pada aplikasi.
+
 ---
 
 **Dibuat oleh Azalia Sakila**  
-**F1D02510005 | Kelas B**
+**NIM F1D02510005 | Kelas B**
